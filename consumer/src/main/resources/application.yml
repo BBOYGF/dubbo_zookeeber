@@ -1,0 +1,16 @@
+dubbo:
+  application:
+    name: myconsumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    scan:
+      base-packages: com.learn.service
+    timeout: 30000
+  config-center:
+    timeout: 30000
+  protocol:
+    name: dubbp
+    port: 20880
+
+server:
+  port: 8021
